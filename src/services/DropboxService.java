@@ -25,7 +25,7 @@ import java.util.Locale;
  * @author Cesar
  */
 public class DropboxService {
-     private static final String ACCESS_TOKEN = "zCsY2ScOJ4AAAAAAAAAAP5WEkzTMXaX9q5UVvamnBpm8oAZS0BYp6mx380QUNcJf";
+     private static final String ACCESS_TOKEN = "#";
      private final  DbxClientV2 client;
      
     public DropboxService() throws IOException, DbxException {

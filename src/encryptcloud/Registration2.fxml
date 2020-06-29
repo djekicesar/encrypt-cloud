@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="encryptcloud.Registration2Controller">
+  <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #fff;" VBox.vgrow="ALWAYS">
+      <children>
+      <Pane prefHeight="580.0" prefWidth="285.0" styleClass="sidebar">
+         <children>
+            <Circle fill="WHITE" layoutX="286.0" layoutY="285.0" radius="64.0" smooth="false" stroke="WHITE" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="162.0" fitWidth="150.0" layoutX="58.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Laptop.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="49.0" layoutX="109.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="139.0" layoutX="58.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cloud-02.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="118.0" fitWidth="130.0" layoutX="227.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Gear.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="82.0" endY="-223.0" layoutX="158.0" layoutY="467.0" startX="21.0" startY="-326.0" stroke="WHITE" strokeWidth="3.0" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER_LEFT" layoutX="399.0" layoutY="476.0" onDragDetected="#goback" prefHeight="47.0" prefWidth="141.0" style="-fx-background-color: #57FB04; -fx-background-radius: 35px;">
+               <children>
+            <JFXButton fx:id="back" onAction="#goback" prefHeight="47.0" prefWidth="144.0" style="-fx-background-color: transparent; -fx-background-radius: 35px;" text="Back" textFill="WHITE" />
+               </children>
+      </HBox>
+            <Label layoutX="824.0" layoutY="516.0" prefHeight="21.0" prefWidth="86.0" />
+            <Label layoutX="358.0" layoutY="14.0" prefHeight="35.0" prefWidth="423.0" text="Click To Select Your Cloud Service  Provider">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Line endX="58.0" endY="-100.0" layoutX="181.0" layoutY="432.0" startX="-26.0" startY="4.0" stroke="WHITE" strokeWidth="3.0" />
+            <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="377.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dropbox.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="oneDrive" fitHeight="96.0" fitWidth="108.0" layoutX="685.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/onedrive.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="icloud" fitHeight="96.0" fitWidth="116.0" layoutX="389.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icloud.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="owncloud" fitHeight="105.0" fitWidth="105.0" layoutX="534.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/owncloud.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="google" fitHeight="96.0" fitWidth="96.0" layoutX="534.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/google.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="679.0" layoutY="322.0" prefHeight="32.0" prefWidth="108.0" text="Others ...">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="534.0" layoutY="226.0" prefHeight="21.0" prefWidth="96.0" text="Google Drive" />
+            <Label layoutX="669.0" layoutY="226.0" prefHeight="21.0" prefWidth="141.0" text="Microsoft One Drive" />
+            <Label layoutX="389.0" layoutY="362.0" prefHeight="21.0" prefWidth="96.0" text="Apple iCloud" />
+            <Label layoutX="556.0" layoutY="362.0" prefHeight="21.0" prefWidth="96.0" text="Own Cloud" />
+            <ProgressBar layoutX="289.0" layoutY="554.0" prefHeight="23.0" prefWidth="616.0" progress="0.33" />
+            <JFXButton fx:id="dropbox" layoutX="392.0" layoutY="221.0" onAction="#dropboxAction" text="Dropbox" />
+   </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="encryptcloud.RegistrationController">
+  <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #fff;" VBox.vgrow="ALWAYS">
+      <children>
+      <Pane prefHeight="586.0" prefWidth="285.0" styleClass="sidebar">
+         <children>
+            <Circle fill="WHITE" layoutX="279.0" layoutY="284.0" radius="65.0" smooth="false" stroke="WHITE" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="130.0" fitWidth="139.0" layoutX="84.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cloud-02.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="118.0" fitWidth="130.0" layoutX="220.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Gear.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="53.0" endY="-228.0" layoutX="190.0" layoutY="462.0" startX="-7.0" startY="-331.0" stroke="WHITE" strokeWidth="3.0" />
+         </children>
+      </Pane>
+            <ImageView fitHeight="118.0" fitWidth="150.0" layoutX="335.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="453.0" layoutY="103.0" prefHeight="55.0" prefWidth="180.0" text="Sign up 1/3" textFill="#424dc2c6">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font></Label>
+            <Label layoutX="349.0" layoutY="179.0" prefHeight="32.0" prefWidth="79.0" text="Username" />
+            <Label layoutX="353.0" layoutY="262.0" prefHeight="35.0" prefWidth="71.0" text="Email " />
+            <Label layoutX="349.0" layoutY="353.0" text="Password" />
+            <ImageView fitHeight="162.0" fitWidth="150.0" layoutX="80.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Laptop.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Line endX="68.0" endY="-89.0" layoutX="181.0" layoutY="432.0" startX="-1.0" startY="1.0" stroke="WHITE" strokeMiterLimit="100.0" strokeWidth="3.0" />
+            <Label layoutX="620.0" layoutY="353.0" prefHeight="21.0" prefWidth="210.0" text="Password Confirmation" />
+            <ProgressBar layoutX="286.0" layoutY="560.0" prefHeight="23.0" prefWidth="638.0" progress="0.04" />
+      <TextField fx:id="username" layoutX="349.0" layoutY="211.0" prefHeight="45.0" prefWidth="534.0" promptText="Enter a Username" />
+               <TextField fx:id="email" layoutX="349.0" layoutY="293.0" prefHeight="45.0" prefWidth="534.0" promptText="Enter Your Email" />
+               <PasswordField fx:id="password" layoutX="349.0" layoutY="374.0" prefHeight="44.0" prefWidth="259.0" promptText="Enter a Password" />
+            <PasswordField fx:id="passConfirmation" layoutX="620.0" layoutY="374.0" prefHeight="44.0" prefWidth="259.0" promptText="Confirm The Password" />
+      <JFXButton fx:id="backToLogin" layoutX="349.0" layoutY="442.0" onAction="#backToLoginAction" prefHeight="47.0" prefWidth="259.0" style="-fx-background-color: #01509F;" text="Back To Login" textFill="WHITE" />
+      <JFXButton fx:id="nextButton" layoutX="620.0" layoutY="442.0" onAction="#nextButtonAction" prefHeight="47.0" prefWidth="259.0" style="-fx-background-color: #01509F;" text="Next" textFill="WHITE" />
+            <ImageView fitHeight="70.0" fitWidth="49.0" layoutX="131.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+   </children>
+    </AnchorPane>
+  </children>
+</VBox>

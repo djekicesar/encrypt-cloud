@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="encryptcloud.Registration3Controller">
+  <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #fff;" VBox.vgrow="ALWAYS">
+      <children>
+      <Pane prefHeight="586.0" prefWidth="285.0" styleClass="sidebar">
+         <children>
+                  <ImageView fitHeight="70.0" fitWidth="49.0" layoutX="118.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="162.0" fitWidth="150.0" layoutX="68.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Laptop.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="139.0" layoutX="75.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cloud-02.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+         </children>
+      </Pane>
+            <Label layoutX="824.0" layoutY="516.0" prefHeight="21.0" prefWidth="86.0" />
+            <Label layoutX="351.0" layoutY="191.0" prefHeight="32.0" prefWidth="150.0" text="Authorization Code" />
+            <Line endX="66.0" endY="-109.0" layoutX="181.0" layoutY="432.0" startX="22.0" startY="-7.0" stroke="WHITE" strokeWidth="3.0" />
+      <JFXButton fx:id="finish" layoutX="354.0" layoutY="322.0" onAction="#finishAction" prefHeight="47.0" prefWidth="529.0" style="-fx-background-color: #01509F;" text="Finish" textFill="WHITE" />
+            <JFXCheckBox fx:id="licence" layoutX="355.0" layoutY="283.0" onAction="#licenceAction" prefHeight="21.0" prefWidth="189.0" text="Licence Agreement" textFill="#9a9595" unCheckedColor="#a49e9e" />
+            <ProgressBar layoutX="289.0" layoutY="560.0" prefHeight="23.0" prefWidth="616.0" progress="0.96" />
+      <TextField fx:id="code" layoutX="351.0" layoutY="223.0" prefHeight="45.0" prefWidth="534.0" promptText="Enter the authozation code " />
+            <ImageView fitHeight="118.0" fitWidth="150.0" layoutX="344.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="455.0" layoutY="112.0" prefHeight="55.0" prefWidth="180.0" text="Sign up 3/3" textFill="#424dc2c6">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+      <Circle fill="WHITE" layoutX="290.0" layoutY="292.0" radius="65.0" smooth="false" stroke="WHITE" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="118.0" fitWidth="130.0" layoutX="230.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Gear.png" />
+               </image>
+            </ImageView>
+            <Line endX="61.0" endY="-199.0" layoutX="191.0" layoutY="442.0" startX="-2.0" startY="-311.0" stroke="WHITE" strokeWidth="3.0" />
+   </children>
+    </AnchorPane>
+  </children>
+</VBox>

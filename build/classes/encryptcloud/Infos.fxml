@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: #01509F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="encryptcloud.InfosController">
+   <children>
+      <Label layoutX="47.0" layoutY="131.0" prefHeight="39.0" prefWidth="90.0" text="Filename" textFill="WHITE" />
+      <Label layoutX="47.0" layoutY="189.0" prefHeight="32.0" prefWidth="90.0" text="Encrypted" textFill="WHITE" />
+      <Label layoutX="47.0" layoutY="245.0" prefHeight="32.0" prefWidth="127.0" text="Check Integrity" textFill="WHITE" />
+      <JFXCheckBox fx:id="integrity" checkedColor="#00ff45" disable="true" layoutX="197.0" layoutY="251.0" selected="true" text="No" textFill="WHITE" unCheckedColor="#efff00" />
+      <Button fx:id="openButton" layoutX="47.0" layoutY="300.0" mnemonicParsing="false" onAction="#openButtonAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: green;" text="Open " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="EcryptButton" layoutX="194.0" layoutY="300.0" mnemonicParsing="false" onAction="#EcryptButtonAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #fff;" text="Encrypt" textFill="#01509f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="345.0" layoutY="300.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: red;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <JFXCheckBox fx:id="encryption" checkedColor="#20ff00" disable="true" layoutX="197.0" layoutY="197.0" selected="true" text="No" textFill="WHITE" unCheckedColor="#e1ff00" />
+      <Line endX="421.0" layoutX="148.0" layoutY="112.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <ImageView fitHeight="87.0" fitWidth="100.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="139.0" layoutY="62.0" prefHeight="39.0" prefWidth="326.0" text="File informations" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="fileName" layoutX="195.0" layoutY="140.0" prefHeight="32.0" prefWidth="372.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="encrytionStatut" layoutX="266.0" layoutY="191.0" prefHeight="32.0" prefWidth="318.0" text="The file is not encrypted, please encrypt it" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="integrityStatus" layoutX="266.0" layoutY="245.0" prefHeight="32.0" prefWidth="279.0" text="Unknown" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="381.0" layoutY="215.0" />
+      <JFXCheckBox fx:id="noButton" layoutX="536.0" layoutY="358.0" onAction="#noButtonAction" text="No" textFill="WHITE" unCheckedColor="WHITE" visible="false" />
+      <JFXCheckBox fx:id="yesButton" layoutX="465.0" layoutY="358.0" onAction="#yesButtonAction" text="Yes" textFill="WHITE" unCheckedColor="WHITE" visible="false" />
+      <Label fx:id="notification" layoutX="47.0" layoutY="358.0" prefHeight="21.0" prefWidth="403.0" text="The file has been modified, are you the originator?" textFill="#faff14" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

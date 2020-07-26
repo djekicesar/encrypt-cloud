@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EncryptCloud.jnlp">
+  <information>
+    <title>EncryptCloud</title>
+    <vendor>Cesar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EncryptCloud.jar" size="408218" download="eager" />
+    <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
+    <jar href="lib\GNButton-1.1.0.jar" size="194323" download="eager" />
+    <jar href="lib\GNCalendar-1.0-alpha.jar" size="11402" download="eager" />
+    <jar href="lib\GNCarousel-2.1.5.jar" size="530460" download="eager" />
+    <jar href="lib\GNDecorator-2.1.2-alpha.jar" size="2869249" download="eager" />
+    <jar href="lib\animatefx-1.2.0.jar" size="85592" download="eager" />
+    <jar href="lib\colors-1.4.jar" size="32122" download="eager" />
+    <jar href="lib\commons-lang-2.6.jar" size="284220" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\dropbox-core-sdk-3.1.3-sources.jar" size="3608577" download="eager" />
+    <jar href="lib\dropbox-core-sdk-3.1.3.jar" size="6891208" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\guava-19.0-rc1.jar" size="2298412" download="eager" />
+    <jar href="lib\jackson-core-2.7.4.jar" size="253001" download="eager" />
+    <jar href="lib\javax.inject-1.jar" size="2497" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\org.eclipse.fx.core-2.2.0.jar" size="146474" download="eager" />
+    <jar href="lib\org.eclipse.fx.ui.controls-2.2.0.jar" size="502528" download="eager" />
+    <jar href="lib\org.eclipse.fx.ui.panes-2.2.0.jar" size="67419" download="eager" />
+    <jar href="lib\org.eclipse.jdt.annotation-2.0.100.jar" size="17100" download="eager" />
+    <jar href="lib\scenicView.jar" size="524264" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.30.1.jar" size="6096861" download="eager" />
+    <jar href="lib\tilesfx-1.5.2.jar" size="1365796" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EncryptCloud" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="encryptcloud.EncryptCloud"  name="EncryptCloud" />
+  <update check="always"/>
+</jnlp>

@@ -195,6 +195,19 @@ public class SQLiteJDBC {
         return fileInfo;
     }
     
+    public void updateHash(String newContentHash, int userId, String filename) throws ClassNotFoundException, SQLException{
+        Class.forName("org.sqlite.JDBC");
+        c = this.connect();
+        String query = "UPDATE FILEMETADATA SET CONTENTHASH = ? WHERE NAME=? AND USERID =?";
+        PreparedStatement pstmt = c.prepareStatement(query);
+        //Parameters
+        pstmt.setString(1, newContentHash);
+        pstmt.setString(2, filename);
+        pstmt.setInt(3, userId);
+        pstmt.executeUpdate();
+        c.close();
+    }
+    
     public void selectAll(){
         try {
       Class.forName("org.sqlite.JDBC");

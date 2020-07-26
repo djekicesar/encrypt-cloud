@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="EncryptCloud.jar" size="408047" download="eager" />
+    <jar href="EncryptCloud.jar" size="408218" download="eager" />
     <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
     <jar href="lib\GNButton-1.1.0.jar" size="194323" download="eager" />
     <jar href="lib\GNCalendar-1.0-alpha.jar" size="11402" download="eager" />

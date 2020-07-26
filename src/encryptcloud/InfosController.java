@@ -192,12 +192,19 @@ public class InfosController implements Initializable {
     
     @FXML
     void noButtonAction(ActionEvent event) {
-
+//        Stage stage = (Stage) noButton.getScene().getWindow();
+//        stage.close();    
+          notification.setVisible(false);
+          yesButton.setVisible(false);
+          noButton.setVisible(false);
     }
     
      @FXML
-    void yesButtonAction(ActionEvent event) {
-
+    void yesButtonAction(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
+        sqlite.updateHash(checksum.checksum(MyFile.getPath(), md), user.getId(), MyFile.getName());
+        notification.setVisible(false);
+        yesButton.setVisible(false);
+        noButton.setVisible(false);
     }
     
     
